@@ -19,6 +19,7 @@ body {
     padding: 0 15px;
 }
 
+/* 4. HEADER & NAVIGASI */
 header {
     background-color: hsl(190, 76%, 61%);
     color: hwb(300 97% 2%);
@@ -46,8 +47,8 @@ nav {
 nav a {
     color: hsl(290, 30%, 96%);
     text-decoration: none;
-    margin: 0 2px;
     padding: 6px 14px;
+    margin: 0 2px;
     border-radius: 4px;
     transition: all 0.3s ease;
 }
