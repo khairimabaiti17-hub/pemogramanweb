@@ -1,3 +1,19 @@
+/* 1. CSS VARIABLE */
+:root {
+    --primary-color: #008080;
+    --primary-dark: #005A5A;
+    --secondary-color: #1A252C;
+    --accent-color: #FF9800;
+    --bg-light: #F4F7F6;
+    --white: #FFFFFF;
+    --text-muted: #666666;
+    --border-color: #E0E0E0;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition-fast: all 0.3s ease;
+}
+
+/* 2.CSS RESET */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +23,8 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    background-color: hsl(315, 36%, 74%);
-    color: hsl(286, 69%, 65%);
+    background-color: var(--bg-light);
+    color: var(--secondary-color);
 }
 
 /* 3. LAYOUT CONTAINER */
@@ -21,8 +37,8 @@ body {
 
 /* 4. HEADER & NAVIGASI */
 header {
-    background-color: hsl(190, 76%, 61%);
-    color: hwb(300 97% 2%);
+    background-color: var(--primary-color);
+    color: var(--white);
     padding: 20px 0;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -45,12 +61,12 @@ nav {
 }
 
 nav a {
-    color: hsl(290, 30%, 96%);
+    color: var(--white);
     text-decoration: none;
     padding: 6px 14px;
     margin: 0 2px;
     border-radius: 4px;
-    transition: all 0.3s ease;
+    transition: var(--transition-fast);
 }
 
 nav a :hover, nav a.active {
@@ -58,3 +74,76 @@ nav a :hover, nav a.active {
     font-weight: bold;
 }
 
+/* 5. MAIN CONTENT */
+main {
+    padding: 40px 0;
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* 6. CARD GRID */
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+/* 7. CARD */
+.card {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: var(--shadow-soft);
+    overflow: hidden;
+    flex: 1 1 300px;
+    max-width: 340px;
+    flex-direction: column;
+    transition: var(--transition-fast);
+    border: 1px solid var(--border-color);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex grow: 1;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--text-muted);
+    margin-bottom: 15px;
+}
