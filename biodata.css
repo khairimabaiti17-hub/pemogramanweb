@@ -1,0 +1,117 @@
+/* ===== BACKGROUND  ===== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 50px 20px;
+    color: #514264;
+    line-height: 1.8;
+ 
+    background:
+        radial-gradient(circle at 10% 10%, #e8cfff 0, transparent 30%),
+        radial-gradient(circle at 90% 80%, #fbd7ed 0, transparent 30%),
+        linear-gradient(135deg, #f8f0ff, #eee1fa, #fceaf5);
+
+    min-height: 100vh;
+}
+
+/* ===== JUDUL UTAMA ===== */
+h1 {
+    text-align: center;
+    color: #79529c;
+    font-size: 34px;
+    letter-spacing: 2px;
+    margin: 0 auto 35px;
+    padding: 25px;
+    max-width: 850px;
+
+    background: rgba(255,255,255,0.75);
+    border: 2px solid #e3c9f5;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(139, 91, 170, 0.15);
+}
+
+/* ===== SUBJUDUL ===== */
+h2 {
+    color: #79529c;
+    font-size: 23px;
+    margin-top: 35px;
+    margin-bottom: 18px;
+    padding: 12px 18px;
+
+    background: linear-gradient(90deg, #ead8fa, #f9e9f5);
+    border-left: 6px solid #ad83cf;
+    border-radius: 10px;
+}
+
+/* ===== PROFIL BIODATA ===== */
+p {
+    background: rgba(255,255,255,0.8);
+    padding: 10px 18px;
+    margin: 5px 0;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(130, 90, 150, 0.08);
+}
+
+/* ===== LIST PENDIDIKAN ===== */
+ol {
+    background: rgba(255,255,255,0.8);
+    padding: 20px 20px 20px 50px;
+    border-radius: 18px;
+    border: 1px solid #e7d4f5;
+    box-shadow: 0 5px 18px rgba(130, 90, 150, 0.1);
+}
+
+ol li {
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+/* ===== LIST HOBI ===== */
+ul {
+    background: rgba(255,255,255,0.8);
+    padding: 20px 20px 20px 50px;
+    border-radius: 18px;
+    border: 1px solid #e7d4f5;
+    box-shadow: 0 5px 18px rgba(130, 90, 150, 0.1);
+}
+
+ul li {
+    padding: 5px;
+    transition: 0.3s;
+}
+
+ul li:hover,
+ol li:hover {
+    color: #a05fc3;
+    transform: translateX(7px);
+}
+
+/* ===== TEKS TEBAL ===== */
+strong, b {
+    color: #895bab;
+}
+
+/* ===== TEKS MIRING ===== */
+i, em {
+    color: #a16fc1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
